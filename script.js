@@ -41,3 +41,17 @@ console.log("Cloned Student with Graduation Year:", clonedStudent);
 const additionalCourses = ["Art", "Music"];
 const allCourses = [...student.courses, ...additionalCourses];
 console.log("All Courses:", allCourses);
+
+// Part 5: Object Methods
+student.addCourse = function (course) {
+    this.courses.push(course);
+};
+
+student.totalCourses = function () {
+    return this.courses.length;
+};
+
+// Use the methods
+student.addCourse("Programming");
+console.log("Updated Courses:", student.courses);
+console.log("Total Number of Courses:", student.totalCourses());
