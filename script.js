@@ -55,3 +55,7 @@ student.totalCourses = function () {
 student.addCourse("Programming");
 console.log("Updated Courses:", student.courses);
 console.log("Total Number of Courses:", student.totalCourses());
+
+// Bonus: Calculate Average Score
+const averageScore = scores.reduce((total, score) => total + score, 0) / scores.length;
+console.log("Average Score:", averageScore);
