@@ -15,3 +15,11 @@ console.log(`Age: ${student.age}`);
 
 // Log the result of calling the displayInfo method
 console.log(student.displayInfo());
+
+// Part 2: Working with JSON
+const studentJSON = JSON.stringify(student);
+console.log("Student as JSON:", studentJSON);
+
+// Convert back to object
+const newStudent = JSON.parse(studentJSON);
+console.log("New Student Object:", newStudent);
